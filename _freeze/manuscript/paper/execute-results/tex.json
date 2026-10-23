@@ -1,0 +1,12 @@
+{
+  "hash": "dd3757e80fe4a63cfb142fda82ec6cce",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"論文タイトル\"\nsubtitle: \"サブタイトル（不要なら削除）\"\nauthor:\n  - name: 山田 太郎\n    affiliations:\n      - name: 〇〇大学\n    email: taro@example.com\ndate: today\ndate-format: \"YYYY年M月D日\"\nabstract: |\n  ここに概要を書く。このファイルは書き出し先（HTML・LuaLaTeX・upLaTeX・arXiv）を\n  変えても同じ原稿を使えるように作ってある。書き出し先ごとの設定は\n  プロジェクト直下の `_quarto-*.yml` にまとめてある。\nkeywords: [Quarto, 再現可能な研究]\nbibliography: references.bib\n---\n\n# はじめに {#sec-intro}\n\n本文はこのように Markdown で書く。文献は [@knuth1984literate] のように引用し、\n文献の一覧は末尾に自動で作られる。図・表・式には番号が付き、本文から\n@fig-wave、@tbl-params、@eq-model のように参照できる。\n\n# 方法 {#sec-method}\n\n対象とする信号を @eq-model で表す。\n\n$$\ny(t) = a \\sin(\\omega t)\n$$ {#eq-model}\n\n計算に使ったパラメータを @tbl-params に示す。\n\n| 記号 | 意味 | 値 |\n|:----:|------|---:|\n| $a$ | 振幅 | 1.0 |\n| $\\omega$ | 角周波数 | 1.0 |\n\n: 計算に使ったパラメータ {#tbl-params}\n\n# 結果 {#sec-result}\n\n@fig-wave は Python で計算した結果である。コードは原稿の中にあり、\n書き出しのたびに図が作り直される（結果は `_freeze/` に保存される）。\n\n::: {.cell execution_count=1}\n\n::: {.cell-output .cell-output-display}\n![正弦波と余弦波（Python で計算して作図）](paper_files/figure-pdf/fig-wave-output-1.pdf){#fig-wave}\n:::\n:::\n\n\n<!--\nMathematica の図を入れる例:\n  1. notebooks/mathematica-example.ipynb を Wolfram Language カーネルで実行する\n     （manuscript/figures/mma-trig.pdf と .png が書き出される）\n  2. 次の行のコメントを外す。拡張子を書かないと、HTML では .png、\n     PDF では .pdf が自動で使われる（各プロファイルの default-image-extension）。\n\n![Mathematica で描いた三角関数](figures/mma-trig){#fig-mma width=\"70%\"}\n-->\n\n# 考察 {#sec-discussion}\n\nここに考察を書く。\n\n# 参考文献 {.unnumbered}\n\n::: {#refs}\n:::\n\n",
+    "supporting": [
+      "paper_files\\figure-pdf"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
