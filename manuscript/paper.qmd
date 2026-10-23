@@ -2,10 +2,10 @@
 title: "論文タイトル"
 subtitle: "サブタイトル（不要なら削除）"
 author:
-  - name: 山田 太郎
+  - name: 荒木 遼
     affiliations:
-      - name: 〇〇大学
-    email: taro@example.com
+      - name: 京都大学
+    email: araki.ryo.z52@kyoto-u.jp
 date: today
 date-format: "YYYY年M月D日"
 abstract: |
@@ -75,7 +75,7 @@ Mathematica の図を入れる例:
 
 # 考察 {#sec-discussion}
 
-ここに考察を書く。
+ここに考察を書く。例えばA。
 
 # 参考文献 {.unnumbered}
 

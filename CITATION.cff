@@ -8,14 +8,14 @@ message: "If you use this work, please cite it as below."
 title: "論文タイトル"
 type: software
 authors:
-  - family-names: "Yamada"
-    given-names: "Taro"
-    affiliation: "〇〇大学"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "ARAKI"
+    given-names: "Ryo"
+    affiliation: "京都大学"
+    orcid: "https://orcid.org/0000-0002-9639-0386"
 version: "0.1.0"
 date-released: "2026-10-12"
 license: CC-BY-4.0
-repository-code: "https://github.com/your-name/your-repo"
+repository-code: "https://github.com/z52-a11y/my-paper"
 abstract: "このリポジトリの概要を1〜3文で書く。"
 keywords:
   - Quarto
